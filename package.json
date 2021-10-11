@@ -1,6 +1,6 @@
 {
   "name": "figma-linux-rust-binding",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Rust module that makes object of meta data of fonts",
   "main": "native/index.node",
   "author": "ChugunovRoman <Zebs-BMK@yandex.ru>",

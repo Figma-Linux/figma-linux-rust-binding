@@ -1,15 +1,11 @@
-const { getFonts } = require("./index.node");
+const { getFonts: _getFonts } = require("./index.node");
 
-let dirs = [
-  `${process.env.HOME}/.local/share/bad_fonts`,
-  `${process.env.HOME}/.local/share/fonts`,
-  '/usr/share/fonts'
-];
-
-console.log('getFonts: ', getFonts);
-
-getFonts(dirs, result => {
-  console.log('result: ', result);
+const getFonts = async dirs => new Promise(resolve => {
+  _getFonts(dirs, fonts => {
+    resolve(fonts);
+  });
 });
 
-console.log('last log');
+export {
+  getFonts,
+}
