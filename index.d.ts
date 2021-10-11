@@ -15,8 +15,5 @@ export namespace Fonts {
 }
 
 declare module "figma-linux-rust-binding" {
-  function getFonts(
-    dirs: string[],
-    callback: (fonts: Fonts.IFonts) => void
-  ): void;
+  function getFonts(dirs: string[]): Promise<Fonts.IFonts>;
 }
