@@ -10,8 +10,7 @@ exclude = ["index.node"]
 crate-type = ["cdylib"]
 
 [dependencies]
-log = "0.4.14"
-libfonthelper = "0.3.3"
+libfonthelper = "0.3.4"
 
 [dependencies.neon]
 version = "0.9"

@@ -67,7 +67,6 @@ name = "figma-linux-rust-binding"
 version = "0.1.0"
 dependencies = [
  "libfonthelper",
- "log",
  "neon",
 ]
 
