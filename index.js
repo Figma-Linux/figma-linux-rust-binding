@@ -6,4 +6,4 @@ const getFonts = async dirs => new Promise(resolve => {
   });
 });
 
-module.getFonts = getFonts;
+exports.getFonts = getFonts;
