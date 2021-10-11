@@ -10,10 +10,13 @@ export namespace Fonts {
   }
 
   interface IFonts {
-    [path: string]: Array<IFontsFigmaItem>
+    [path: string]: Array<IFontsFigmaItem>;
   }
 }
 
-declare module 'figma-linux-rust-binding' {
-  function getFonts(dirs: string[], callback: (err: Error, fonts: Fonts.IFonts) => void): void;
+declare module "figma-linux-rust-binding" {
+  function getFonts(
+    dirs: string[],
+    callback: (fonts: Fonts.IFonts) => void
+  ): void;
 }
