@@ -1,0 +1,19 @@
+[package]
+name = "figma-linux-rust-binding"
+version = "0.1.0"
+authors = ["Chugunov Roman"]
+license = "GPL-2.0-only"
+edition = "2018"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+log = "0.4.14"
+libfonthelper = "0.3.3"
+
+[dependencies.neon]
+version = "0.9"
+default-features = false
+features = ["napi-6", "event-queue-api", "try-catch-api"]
